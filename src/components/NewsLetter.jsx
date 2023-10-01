@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import successIcon from "../assets/images/icon-success.svg";
 import NewsLetterImg from "../assets/images/illustration-sign-up-desktop.svg";
 import NewsLetterImgMobile from "../assets/images/illustration-sign-up-mobile.svg";
-
-// react animation on scroll
-import AOS from "aos";
-import "aos/dist/aos.css";
 const NewsLetter = ({ handleSubmitForm }) => {
   const formInitialDetails = { email: "" };
 
