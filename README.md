@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Wali1209/newsletter-signup)
-- Live Site URL: [Add live site URL here](https://wali1209.github.io/newsletter-signup/)
+- Live Site URL: [gh-pages](https://wali1209.github.io/newsletter-signup/)
 
 ## My process
 
