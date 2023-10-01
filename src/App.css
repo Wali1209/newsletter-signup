@@ -1,0 +1,167 @@
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+  background-color: var(--Dark-Slate-Grey);
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  background-color: var(--White);
+  padding: 1.5rem ;
+  border-radius: 2rem;
+  width: 100%;
+}
+.news-letter{
+  max-width: 58rem;
+}
+.news-letter-content{
+  padding: 0 2rem;
+}
+.news-letter-heading{
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 3rem 0 2rem 0;
+}
+
+.news-letter-text{
+  color: var(--Charcoal-Grey);
+  font-weight: 700;
+  opacity: .8;
+}
+.news-letter-list{
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+.news-letter-list li{
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: .5rem;
+  
+}
+.news-letter-list li img{
+  width: 1.5rem;  
+}
+.news-letter-list li span{
+  padding-left: 1rem;
+  font-weight: 700;
+  color: var(--Charcoal-Grey);
+  opacity: .9;
+}
+form label{
+  font-weight: 700;
+}
+form span{
+  color:var(--Tomato);
+  text-align: end;
+}
+form input[type='text']{
+  width: 100%;
+  margin: .5rem 0;
+  border: 1px solid var(--Grey);
+  padding: 1rem;
+  font-size:1rem;
+  border-radius: .75rem;
+}
+form input[type='text']:focus{
+  border: 1px solid var(--Grey);
+}
+
+form button[type='submit']{
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: none;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: .5rem;
+
+}
+form button[type='submit']:hover{
+  background: linear-gradient(to right , var(--Tomato) , hsl(4, 70%, 64%));
+  box-shadow:   0 10px 20px hsla(4, 100%, 67%, 0.3);
+  transition: all 0.5s ease;
+
+}
+
+img[alt="newsletter cover"]{
+  margin-left: 1rem;
+
+}
+img[alt="newsletter cover-mobile"]{
+  width: 100%;
+  height:30%;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* success styling */
+section .success{
+  background-color: var(--White);
+  padding: 3rem 2rem ;
+  border-radius: 2rem;
+  width: 30rem;
+}
+section img{
+  margin: 1rem 0;
+}
+.thank-you-heading{
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+section p{
+  margin: 1.5rem 0;
+}
+section button{
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: none;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: .5rem;
+  width: 100%;
+
+
+}
+section button:hover{
+  background: linear-gradient(to right , var(--Tomato) , hsl(4, 70%, 64%));
+  box-shadow:   0 10px 20px hsla(4, 100%, 67%, 0.3);
+  transition: all 0.5s ease;
+
+}
+
+
+/* media queries */
+@media screen and (max-width : 576px) {
+  main{
+    width: 100%;
+    min-height:100dvh;
+    border-radius: 0%;
+    padding: 0;
+    padding-bottom: 2rem;
+
+  }
+  section{
+    width: 100%;
+  }
+  section .success{
+    width: 100%;
+    min-height:100dvh ;
+    border-radius: 0%;
+  }
+}
